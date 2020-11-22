@@ -28,7 +28,7 @@ print(int(159.650))
 
 
 def myFunction(num1, num2, operation):
-    if num1 == int and num2 == int and (operation == 'add' or operation == 'multiply'):
+    if (isinstance(num1, int)) == True and (isinstance(num2, int)) == True and (operation == 'add' or operation == 'multiply'):
         if operation == 'add':
             print(num1 + num2)
         elif operation == 'multiply':
@@ -39,7 +39,7 @@ def myFunction(num1, num2, operation):
         print('Your input not Integer')
 
 
-myFunction(2, 4, 'add')         # Something Wrong in number [6]
+myFunction(2, 4, 'add')
 myFunction(2, 4, 'multiply')
 # [07] Get The Same Result Without Use The Exponents 3 ** 8
 print(3**8)                             # 6561
