@@ -28,7 +28,8 @@ print(int(159.650))
 
 
 def myFunction(num1, num2, operation):
-    if (isinstance(num1, int)) == True and (isinstance(num2, int)) == True:
+    if type(num1) == int and type(num2) == int:
+        # if (isinstance(num1, int)) == True and (isinstance(num2, int)) == True:
         if operation == 'add':
             print(num1 + num2)
         elif operation == 'multiply':
