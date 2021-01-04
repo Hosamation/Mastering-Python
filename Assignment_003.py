@@ -3,49 +3,42 @@
 # ---------------------------------------------------------
 
 # [01] Write Down All Types Of Integer
-print(type(1))
-print(type(-1))
+print(1)
+print(1.50)
+print(1+2j)
+print(type(1))  # Int
+print(type(1.50))  # Float
+print(type(1+2j))  # Complex
+
+print("\n##### End Of Assignment 1 #####\n")
 
 # [02] Get The Imaginary Part For The Complex Number "1+2j"
 complexNumber = 1+2j
 print(type(complexNumber))
 print(f'Imaginary Part is {complexNumber.imag}')
-
-# [03] Get The Real Part For The Complex Number "1+2j"
 print(f'Real Part is {complexNumber.real}')
 
-# [04] Convert Number 10 To Floating Point Number With 10 Number After Decimal
-print(float(10))
+print("\n##### End Of Assignment 2 #####\n")
 
-# [05] Convert Floating Number 159.650 To Integer
-print(int(159.650))
+# [03] Convert Number 10 To Floating Point Number With 10 Number After Decimal
+num = 10
+print(f"{num:.10f}")  # 10.0000000000
 
-# [06] Function
-# --- Create Function Accepts Three Parameters ( num1, num2, operation )
-# --- Check if Given Arguments Is Integers
-# --- Return The Results of Addition if Third Parameter is ( add )
-# --- Return The Results of Multiplication if Third Parameter is ( multiply )
+print("\n##### End Of Assignment 3 #####\n")
 
+# [04] Convert Floating Number 159.650 To Integer
+num = 159.650
 
-def myFunction(num1, num2, operation):
-    if type(num1) == int and type(num2) == int:
-        # if (isinstance(num1, int)) == True and (isinstance(num2, int)) == True:
-        if operation == 'add':
-            print(num1 + num2)
-        elif operation == 'multiply':
-            print(num1 * num2)
-        else:
-            print('Choose add or multiply')
-    else:
-        print('Your input not Integer')
+print(int(num))
+print(type(int(num)))
 
+print("\n##### End Of Assignment 4 #####\n")
 
-myFunction(2, 4, 'add')
-myFunction(2, 4, 'multiply')
-# [07] Get The Same Result Without Use The Exponents 3 ** 8
-print(3**8)                             # 6561
-print(3 * 3 * 3 * 3 * 3 * 3 * 3 * 3)    # 6561
+# [05] 
+print(100 - 115)  # -15
+print(50 * 30)  # 1500
+print(21 % 4)  # 1
+print(int(110 / 11))  # 10
+print(97 // 20)  # 4
 
-# [08] Whats The Different Between 21 / 2 And 21 // 2 "Write Soultion With Comment"
-print(21 / 2)       # Float 10.5
-print(21 // 2)      # Int   10
+print("\n##### End Of Assignment 5 #####\n")
